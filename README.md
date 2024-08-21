@@ -12,10 +12,10 @@
   <a href="https://travis-ci.org/PanJiaChen/vue-element-admin" rel="nofollow">
     <img src="https://travis-ci.org/PanJiaChen/vue-element-admin.svg?branch=master" alt="Build Status">
   </a>
-  <a href="https://github.com/PanJiaChen/vue-element-admin/blob/master/LICENSE">
+  <a href="https://github.com/liuguowei4/vue-element-admin-electron/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
   </a>
-  <a href="https://github.com/PanJiaChen/vue-element-admin/releases">
+  <a href="https://github.com/liuguowei4/vue-element-admin-electron/releases">
     <img src="https://img.shields.io/github/release/PanJiaChen/vue-element-admin.svg" alt="GitHub release">
   </a>
   <a href="https://gitter.im/vue-element-admin/discuss">
@@ -27,6 +27,13 @@
 </p>
 
 
-# electron版的vue-element-admin
-<blockquote>应leader提的需求，要把之前一个用vue-element-admin写的项目改为桌面端，诞生了搞一个模板的想法，以后写就用这套模板改。具体可以可看博客 https://blog.csdn.net/liuguowei14/article/details/135972461?spm=1001.2014.3001.5502
-</blockquote>
+## 前言
+防止后续有系统配置问题，运行前记得先 **npx electron-forge import** 重新生成一下配置文件
+
+## 开发环境运行
+首先打开两个命令行，先在命令行1中执行 **npm run dev** 命令，待vue服务器打开。注意：要确定好本地服务器的地址，一定要与 **background.js** 里 **loadURL** 函数的地址对上
+服务器打开后，在在命令行2中执行 **npm run start** 命令，开启应用，即完成项目运行。
+
+## 生产环境打包
+与开发环境一样，打开两个命令行，先在命令行1中执行 **npm run build** 命令，等待文件打包完成。注意：要确定好打包文件位置，一定要与 **background.js** 里**loadFile** 函数的对上
+打包完成后，在命令行2中执行 **npm run make** 命令，将vue打包成应用程序。打包成功的执行程序在 **out/vue-element-admin-electron-win32-x64/electron-vue.exe** 查看，安装文件在查看 **out/make/squirrel.windows/x64/vue-element-admin-electron-1.0.0 Setup.exe** 处

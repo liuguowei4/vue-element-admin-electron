@@ -6,7 +6,7 @@ describe('Utils:validate', () => {
     expect(validUsername('xxxx')).toBe(false)
   })
   it('validURL', () => {
-    expect(validURL('https://github.com/PanJiaChen/vue-element-admin')).toBe(true)
+    expect(validURL('https://github.com/liuguowei4/vue-element-admin-electron')).toBe(true)
     expect(validURL('http://github.com/PanJiaChen/vue-element-admin')).toBe(true)
     expect(validURL('github.com/PanJiaChen/vue-element-admin')).toBe(false)
   })
