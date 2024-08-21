@@ -30,7 +30,7 @@
 ## 前言
 防止后续有系统配置问题，运行前记得先 **npx electron-forge import** 重新生成一下配置文件
 
-如果想看详细步骤可以看看我的博客：https://blog.csdn.net/liuguowei14/article/details/135972461?spm=1001.2014.3001.5501
+如果是其他vue项目，想套壳使用，可以看看我的博客：https://blog.csdn.net/liuguowei14/article/details/135972461?spm=1001.2014.3001.5501
 
 ## 开发环境运行
 首先打开两个命令行，先在命令行1中执行 **npm run dev** 命令，待vue服务器打开。注意：要确定好本地服务器的地址，一定要与 **background.js** 里 **loadURL** 函数的地址对上
