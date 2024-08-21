@@ -32,8 +32,10 @@
 
 ## 开发环境运行
 首先打开两个命令行，先在命令行1中执行 **npm run dev** 命令，待vue服务器打开。注意：要确定好本地服务器的地址，一定要与 **background.js** 里 **loadURL** 函数的地址对上
+
 服务器打开后，在在命令行2中执行 **npm run start** 命令，开启应用，即完成项目运行。
 
 ## 生产环境打包
 与开发环境一样，打开两个命令行，先在命令行1中执行 **npm run build** 命令，等待文件打包完成。注意：要确定好打包文件位置，一定要与 **background.js** 里**loadFile** 函数的对上
+
 打包完成后，在命令行2中执行 **npm run make** 命令，将vue打包成应用程序。打包成功的执行程序在 **out/vue-element-admin-electron-win32-x64/electron-vue.exe** 查看，安装文件在查看 **out/make/squirrel.windows/x64/vue-element-admin-electron-1.0.0 Setup.exe** 处
